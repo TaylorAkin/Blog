@@ -1,0 +1,188 @@
+body {
+    background: url("/images/Coloradoprofile.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 10px;
+  
+  }
+  
+  
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Header Styling */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    top: 0;
+    padding: 5px;
+    width: 100%;
+    height: 55px; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: scroll; /* Enable scrolling if the sidenav has too much content */
+  }
+
+  li {
+    float: left;
+    margin: 0;
+   
+  }
+
+  .right {
+    float: right;
+   
+  
+  }
+
+  .youtube 
+  {
+    padding-right: 15px;
+
+  }
+
+  
+  li a {
+    margin: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: white;
+   
+
+  }
+
+  .fa {
+    padding: 13px;
+    font-size: 0px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 9px;
+    border-radius: 100%;
+    
+  }
+    
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+
+  }
+
+  .fa-instagram {
+    background: #d6327e;
+    color: white;
+  }
+
+  .fa-youtube-play {
+    color: red;
+    background: white;
+  }
+
+  .fa-linkedin-square
+  {
+    color: blue;
+    background: white
+  }
+
+  .fa-github-square
+  {
+    color: gray;
+    background: black;
+  }
+  
+  
+  .material-icons {
+     padding: 11px 20px;
+    border-radius: 80%;
+  }
+
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+
+   
+  .li right {
+    margin: 18px;
+    float: right;
+    font-size: 25px;
+    margin-right: 40px;
+    
+  }
+  
+  
+  .tooltip {
+    margin-left: 15px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.9s;
+    font-size: 25px;
+  }
+
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .blur {
+    -webkit-filter: blur(4px);
+}
+
+
+  p.fontsize {
+    font-size: 75px;
+    padding-bottom: 0px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 175px;
+    font-family: 'Syncopate';
+  }
+
+  p.twofontsize {
+    font-size: 75px;
+    margin-top: 0px;
+    margin-left: 140px;
+    margin-bottom: 0px;
+    font-family: 'Syncopate';
+  }
+
+  p.threefontsize {
+    font-size: 75px;
+    margin-top: 0px;
+    margin-left: 180px;
+    margin-bottom: 250px;
+    font-family: 'Syncopate';
+  }
+
+.bio{
+  font-size: 30px;
+  margin-left: 2em;
+  margin-bottom: 200px;   
+}
