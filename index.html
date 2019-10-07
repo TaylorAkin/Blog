@@ -26,41 +26,43 @@
 
 
 <body>
-
-    <header>
-        <nav class="navbar fixed-top navbar-dark">
-            <button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#hamburger"
-                aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ml-auto" id="hamburger">
-                <a class="navbar-brand" href="#">hamburger
-                    <img src="" alt="">
-                </a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                </ul>
-            </div>
-            <nav class="navbar-nav ml-auto">
-                <a class="navbar-brand mt-3 mr-5" href="index.html">
-                    <img src="/images/TAlogofix.png" height="45" class="d-inline-block align-top" alt="">
-                </a>
-            </nav>
-        </nav>
-    </header>
-
     <div class="container">
         <div class="row">
+            <header>
+
+                <nav class="navbar fixed-top navbar-dark">
+                    <button onclick="togglefunction" class="navbar-toggler ml-5" id="toggler" type="button" data-toggle="collapse"
+                        data-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mr-auto" id="hamburger">
+                        <a class="navbar-brand" href="#">
+                            <img src="" alt="">
+                        </a>
+                        <ul class="navbar-nav mt-5 mt-lg-0 mx-auto w-50 display-4">
+                            <li class="nav-item active mx-auto w-50">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active mx-auto w-50">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item active mx-auto w-50">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                     <a class="navbar-brand mt-3 mr-5 ml-auto" href="index.html">
+                                <img src="/images/TAlogofix.png" height="45" class="d-inline-block align-top" alt="">
+                            </a>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
             <div class="col">
-                    <img src="images/Coloradoprofile.jpg" class="img-fluid" alt="Responsive image">
+                <img src="images/Oregon.jpg" class="float-right" id="photo1" alt="Responsive image">
             </div>
         </div>
 
