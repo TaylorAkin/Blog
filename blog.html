@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <!--My personal css styles for my html-->
-    <link href="/styles.css" rel="stylesheet" type="text/css">
+    <link href="/blog.css" rel="stylesheet" type="text/css">
 
     <!--Font Styles-->
     <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
@@ -23,236 +23,240 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<header>
-
-
-    <nav class="navbar fixed-top navbar-dark">
-
-
-        <button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#hamburger" aria-controls="hamburger"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ml-auto" id="hamburger">
-            <a class="navbar-brand" href="#">hamburger
-                <img src="" alt="">
-            </a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-            </ul>
-        </div>
-
-        <nav class="navbar-nav ml-auto">
-            <a class="navbar-brand mt-3 mr-5" href="index.html">
-                <img src="/images/TAlogofix.png" height="45" class="d-inline-block align-top" alt="">
-            </a>
-        </nav>
-    </nav>
-
-</header>
-
 <body>
-    <div class="container-fluid mt-5 d-flex">
-        <div class="row d-flex">
-            <div class="col d-flex">
-                <div class="accordion aria-expanded " id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                    Blog Week #1
-                                </button>
-                            </h5>
+    <header>
+    <div class="container-fluid" id= "firstcontainer">
+        <div class="row">
+                <nav class="navbar fixed-top navbar-dark">
+                    <!-- The overlay -->
+                    <div id="myNav" class="overlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <a href="index.html">Home</a>
+                            <a href="#">About</a>
+                            <a href="projects.html">Projects</a>
+                            <a href="blog.html">Blog</a>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                The first week was everything that I expected to be.The lead team did a great
-                                job informing me and others what to expct and it helped alot that i've had some
-                                experience with the
-                                programs we're using. I'm not struggling with too much right now, more so just becoming
-                                more familiar with the things i'm
-                                being refreshed on. Becoming more effecient I guess you could say.
+                    </div>
 
-                                The thing I'm most excited about is allowing my skills to match my imagination. Not
-                                letting there be
-                                barriers to limit creativity.
-                            </div>
+                    <!-- Use any element to open/show the overlay navigation menu -->
+
+                    <button onclick="openNav()" class="navbar-toggler ml-5" id="toggler" type="button" data-toggle="collapse"
+                        data-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand mt-3 mr-5 ml-auto" href="index.html">
+                        <img src="/images/TAlogofix.png" height="45" class="d-inline-block align-top" alt="">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="container-fluid" id = "firstcontainer">
+    <div class="row py-5">
+        <div class="col">
+            <div class="accordion aria-expanded mt-5 " id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Blog Week #1
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            The first week was everything that I expected to be.The lead team did a great
+                            job informing me and others what to expct and it helped alot that i've had some
+                            experience with the
+                            programs we're using. I'm not struggling with too much right now, more so just becoming
+                            more familiar with the things i'm
+                            being refreshed on. Becoming more effecient I guess you could say.
+
+                            The thing I'm most excited about is allowing my skills to match my imagination. Not
+                            letting there be
+                            barriers to limit creativity.
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    Blog Week #2
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Blog Week #2
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
 
-                                Psuedo coding is great because it allows me to speak in my own terms to describe
-                                what the code needs to do. I can't wait to get better at it.
-                                I know that I need to get better at how I word Pseudo code. So I think that's what
-                                I'm struggling most with right now.
-                                I'm most excited about speeding up my skills, speeding up results and making
-                                cool projects.
+                            Psuedo coding is great because it allows me to speak in my own terms to describe
+                            what the code needs to do. I can't wait to get better at it.
+                            I know that I need to get better at how I word Pseudo code. So I think that's what
+                            I'm struggling most with right now.
+                            I'm most excited about speeding up my skills, speeding up results and making
+                            cool projects.
 
-                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Blog Week #3
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Blog Week #3
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
 
-                                I enjoy the moment of figuring out answers to taking creative thought to finished
-                                product, while using HTML, CSS, and JavaScript. HTML being the structure of the
-                                building if
-                                you will, CSS the paitings and aesthetics,and JavaScript giving functionality and
-                                making things
-                                work.
+                            I enjoy the moment of figuring out answers to taking creative thought to finished
+                            product, while using HTML, CSS, and JavaScript. HTML being the structure of the
+                            building if
+                            you will, CSS the paitings and aesthetics,and JavaScript giving functionality and
+                            making things
+                            work.
 
-                                I enjoy making the layout out the most right now, so you could say front end
-                                development. Breaking
-                                through and figuring out cool design methods and effects are things I enjoy. That's
-                                what most of my
-                                experiecne has been in thus far with web development.
-                                I know user experience is what matters most and of course that is going to be best the
-                                site actually
-                                works, more back end work. Javascript is what I need to work on the most, making sure I
-                                understand
-                                syntak and taking psuedo code and thought to working code.
-                                </p>
-                                </p>
-                            </div>
+                            I enjoy making the layout out the most right now, so you could say front end
+                            development. Breaking
+                            through and figuring out cool design methods and effects are things I enjoy. That's
+                            what most of my
+                            experiecne has been in thus far with web development.
+                            I know user experience is what matters most and of course that is going to be best the
+                            site actually
+                            works, more back end work. Javascript is what I need to work on the most, making sure I
+                            understand
+                            syntak and taking psuedo code and thought to working code.
+                            </p>
+                            </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Blog Week #4
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Blog Week #4
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
 
 
-                                Refreshing my prior knowledge and learning more about HTML, CSS, and JS was
-                                great and I learned alot. I used to really struggle with JS but with the practice and
-                                instruction
-                                thorugh the program I am way more confident with it.
+                            Refreshing my prior knowledge and learning more about HTML, CSS, and JS was
+                            great and I learned alot. I used to really struggle with JS but with the practice and
+                            instruction
+                            thorugh the program I am way more confident with it.
 
-                                The thing most new to me and most helpful is Psuedo code.It definitely helps me thin
-                                through the
-                                processes and function that have to happen to acheive the goal and purpose of the
-                                programming.
-                                I wouldn't say anything has hindered my progress but I will be able to learn much
-                                faster with starting
-                                full time training and being done with my former job. Asking questions and psuedo code
-                                are the two
-                                things I'm going to make sure to get better at.
+                            The thing most new to me and most helpful is Psuedo code.It definitely helps me thin
+                            through the
+                            processes and function that have to happen to acheive the goal and purpose of the
+                            programming.
+                            I wouldn't say anything has hindered my progress but I will be able to learn much
+                            faster with starting
+                            full time training and being done with my former job. Asking questions and psuedo code
+                            are the two
+                            things I'm going to make sure to get better at.
 
-                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Blog Week #5
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Blog Week #5
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
 
-                                Two things I learned this past week were C.R.A.P principles and the use of white space.
-                                Using contrast to focus our
-                                attention on where it needs ot be. Using repition to tie the website together.
-                                Alignment to make text easily readable
-                                and to show orginizaiton, giving polished look. Then the importance of proximity and
-                                how it creates relationships
-                                amongst objects. I really want to continue to develop good design habits as well as
-                                intuition to create new fresh design layouts .
-                                As a developer and user I want a website to make sense, easily readable, and have a
-                                impressive look. The C.R.A.P principles
-                                help acheive that, and also make the coding side of things easier to manage and layout.
+                            Two things I learned this past week were C.R.A.P principles and the use of white space.
+                            Using contrast to focus our
+                            attention on where it needs ot be. Using repition to tie the website together.
+                            Alignment to make text easily readable
+                            and to show orginizaiton, giving polished look. Then the importance of proximity and
+                            how it creates relationships
+                            amongst objects. I really want to continue to develop good design habits as well as
+                            intuition to create new fresh design layouts .
+                            As a developer and user I want a website to make sense, easily readable, and have a
+                            impressive look. The C.R.A.P principles
+                            help acheive that, and also make the coding side of things easier to manage and layout.
 
-                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Blog Week #6
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Blog Week #6
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
 
-                                Two things I learned this past week were C.R.A.P principles and the use of white space.
-                                Using contrast to focus our
-                                attention on where it needs ot be. Using repition to tie the website together.
-                                Alignment to make text easily readable
-                                and to show orginizaiton, giving polished look. Then the importance of proximity and
-                                how it creates relationships
-                                amongst objects. I really want to continue to develop good design habits as well as
-                                intuition to create new fresh design layouts .
-                                As a developer and user I want a website to make sense, easily readable, and have a
-                                impressive look. The C.R.A.P principles
-                                help acheive that, and also make the coding side of things easier to manage and layout.
+                            Two things I learned this past week were C.R.A.P principles and the use of white space.
+                            Using contrast to focus our
+                            attention on where it needs ot be. Using repition to tie the website together.
+                            Alignment to make text easily readable
+                            and to show orginizaiton, giving polished look. Then the importance of proximity and
+                            how it creates relationships
+                            amongst objects. I really want to continue to develop good design habits as well as
+                            intuition to create new fresh design layouts .
+                            As a developer and user I want a website to make sense, easily readable, and have a
+                            impressive look. The C.R.A.P principles
+                            help acheive that, and also make the coding side of things easier to manage and layout.
 
-                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Blog Week #7
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Blog Week #7
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
 
-                             JavaScript, once you begin to know the language and remember certain built in objects and uses it's 
-                             super great to use. JS is great for building your HTML and I'm not at that point. I'm also getting more 
-                             familiar with using Object Instances and building contstructor functions to help program with dry code.
-                             I'm interested in getting more comfortable with those as well as learning more about classes. 
+                            JavaScript, once you begin to know the language and remember certain built in objects and
+                            uses it's
+                            super great to use. JS is great for building your HTML and I'm not at that point. I'm also
+                            getting more
+                            familiar with using Object Instances and building contstructor functions to help program
+                            with dry code.
+                            I'm interested in getting more comfortable with those as well as learning more about
+                            classes.
 
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
 
@@ -271,6 +275,7 @@ What Design aspects are important to you as a user and as a developer?
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
