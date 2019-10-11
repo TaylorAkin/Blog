@@ -31,11 +31,31 @@
             <header>
 
                 <nav class="navbar fixed-top navbar-dark">
-                    <button onclick="togglefunction" class="navbar-toggler ml-5" id="toggler" type="button" data-toggle="collapse"
+                    <!-- The overlay -->
+                    <div id="myNav" class="overlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <a href="index.html">Home</a>
+                            <a href="#">About</a>
+                            <a href="projects.html">Projects</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Use any element to open/show the overlay navigation menu
+                    <span onclick="openNav()">open</span> -->
+
+
+                    <button onclick="openNav()" class="navbar-toggler ml-5" id="toggler" type="button" data-toggle="collapse"
                         data-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse mr-auto" id="hamburger">
+                    <!-- <div class="collapse navbar-collapse mr-auto" id="hamburger">
                         <a class="navbar-brand" href="#">
                             <img src="" alt="">
                         </a>
@@ -50,22 +70,43 @@
                                 <a class="nav-link" href="projects.html">Projects</a>
                             </li>
                         </ul>
-                    </div>
-                     <a class="navbar-brand mt-3 mr-5 ml-auto" href="index.html">
-                                <img src="/images/TAlogofix.png" height="45" class="d-inline-block align-top" alt="">
-                            </a>
+                    </div> -->
+                    <a class="navbar-brand mt-3 mr-5 ml-auto" href="index.html">
+                        <img src="/images/TAlogofix.png" height="45" class="d-inline-block align-top" alt="">
+                    </a>
                 </nav>
             </header>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row ">
-            <div class="col">
-                <img src="images/Oregon.jpg" class="float-right" id="photo1" alt="Responsive image">
+    <div class="container-fluid" id="firstcontainer">
+        <div class="row py-5">
+            <div class="col-3">
+
+            </div>
+            <div class="col-4">
+
+
+            </div>
+            <div class="col-5 mb-3">
+                <img src="images/Oregon.jpg" class=" mt-5" id="photo1" alt="Responsive image">
             </div>
         </div>
+    </div>
+    <div class="container-fluid" id="secondcontainer">
+        <div class="row py-5">
+            <div class="col-3">
+                <img src="images/Oregon.jpg" class=" mt-5" id="photo1" alt="Responsive image">
 
+            </div>
+            <div class="col-4">
+
+
+            </div>
+            <div class="col-5 mb-5">
+
+            </div>
+        </div>
     </div>
 
 
