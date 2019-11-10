@@ -1,28 +1,22 @@
 
-/*Typewriter effect*/
-// var i = 0;
-// var txt = 'Imagine'; /* The text */
-// var speed = 500; /* The speed/duration of the effect in milliseconds */
-
-// window.onload = function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("imagine").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-
-// }
 
 /* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.height = "100%";
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById("myNav").style.height = "0%";
 }
 
+
+//scroll funciton
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
 
 
 
